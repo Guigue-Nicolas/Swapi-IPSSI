@@ -1,0 +1,76 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.main_block{
+	display: inline-block;
+	padding-top: 5%;
+	padding-right: 20%;
+	padding-left: 20%;
+}
+
+.img_historique{
+	display:block;
+	width:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.liste_ol {counter-reset: repas;} /* on initialise et nomme un compteur */
+.liste_li {
+    list-style-type: none;
+    counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
+    border: 1px solid #000;
+    margin: 2em;
+    width: 10em;
+    padding: 5px;
+}
+.liste_li:before {
+    content: counter(repas); /* on affiche le compteur */
+    padding: 0 20px 6px;
+    margin-right: 8px;
+    vertical-align: top;
+    background: #678;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;		
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
